@@ -2,7 +2,7 @@
 function buscarPelicula(titulo) {
   const apiKey = "7cfeefaf";
   //CLAVE PROPORCIONADA DE LA API AMDb
-  const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${titulo}&type=movie`;
+  const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${titulo}&type=movie`;
   // PARAMETROS QUERY: apikey=${apiKey}  LA CLAVE,
   //s=${titulo}  PARAMETRO TITULO, type=movie  TIPO DE RESULTADO TYPE(PELICULA,
   //SERIE Y EPISODIO) DE LA API.  CON LA S HACEMOS LA BUSQUEDA DE TITULO
@@ -75,7 +75,7 @@ async function obtenerDetallesPelicula(id) {
 function obtenerPeliculasPorAnio() {
   const apiKey = "7cfeefaf";
   //CLAVE PROPORCIONADA DE LA API AMDb
-  const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=&type=movie&y=`;
+  const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=&type=movie&y=`;
   return (
     //PARAMETROS QUERY: apikey=${apiKey}  LA CLAVE, s=& PARAMETRO QUE INDICA EL TERMINO DE
     //BUSQUEDA, type=movie TYPE(PELICULA,SERIE Y EPISODIO) DE LA API, y= PEDIMOS EL AÑO
