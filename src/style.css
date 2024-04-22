@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+  background-image: url("Imagenes/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caja,
+.peliculas {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  padding: 40px;
+  border: 2px solid #661818;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #1d0d0dec;
+  box-shadow: 2px 2px 8px rgba(241, 227, 227, 0.479);
+}
+
+.peliculas {
+  padding: 30px;
+  border: 2px solid #661818;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.pelicula img {
+  max-width: 220px;
+  max-height: 220px;
+  margin-bottom: 10px;
+}
+
+.pelicula h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #e7dcdc;
+  text-shadow: 2px 2px 4px rgba(199, 148, 148, 0.5);
+}
+
+.pelicula p {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #f3ecec;
+  text-shadow: 2px 2px 4px rgba(199, 148, 148, 0.5);
+}
+
+@keyframes oscilacion {
+  0% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(-4px);
+  }
+}
+
+h1 {
+  font-family: "Impact", Charcoal, sans-serif;
+  color: #b4b3b3;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(199, 148, 148, 0.5);
+  animation: oscilacion 3s infinite alternate;
+}
+
+input[type="text"] {
+  padding: 23px;
+  margin-right: 16px;
+  background-color: #f3ecec;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 14px 25px;
+  background-color: #85390e;
+  color: #eee2e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Impact", Charcoal, sans-serif;
+  text-shadow: 2px 2px 4px rgba(199, 148, 148, 0.5);
+}
+
+button:hover {
+  background-color: #862121;
+}
+
+@media screen and (max-width: 768px) {
+  .caja,
+  .peliculas {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .peliculas {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .pelicula h2 {
+    font-size: 24px;
+  }
+
+  .pelicula p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input[type="text"] {
+    padding: 12px;
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
